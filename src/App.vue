@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import { useCycleList } from '@vueuse/core'
-
+import { useUserStore } from './stores/user'
 
 const { availableLocales, locale } = useI18n()
 const { next: nextLang } = useCycleList(availableLocales, { initialValue: locale  })
+const userStore = useUserStore()
 </script>
 
 <template>
   <div>
+    <input v-model="userStore.user" />
     <button @click="() => locale =  nextLang()">change lang</button>
   </div>
   <TodoList />
