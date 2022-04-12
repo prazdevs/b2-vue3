@@ -4,10 +4,11 @@
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     Message: typeof import('./components/Message.vue')['default']
     MessageOld: typeof import('./components/MessageOld.vue')['default']
     Redbutton: typeof import('./components/Redbutton.vue')['default']
+    TodoItem: typeof import('./components/TodoItem.vue')['default']
+    TodoList: typeof import('./components/TodoList.vue')['default']
   }
 }
 

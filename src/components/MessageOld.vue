@@ -1,5 +1,4 @@
 <script lang="ts">
-import { defineComponent, onMounted, ref, computed, watch } from "vue";
 import { useCounter } from "../composables/useCounter";
 
 export default defineComponent({

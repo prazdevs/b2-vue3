@@ -1,16 +1,35 @@
 <script setup lang="ts">
-import { useClipboard } from '@vueuse/core'
-import { ref } from 'vue';
-
-const myText = ref('')
-const { copy } = useClipboard({ source: myText })
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <Message message="hello :)" id="myMessage" />
-  <input v-model="myText" />
-  <Redbutton @click="copy">to clipboard</Redbutton>
+  <TodoList />
+  <!-- <TodoItem 
+    v-for="(todo,idx) in todos"
+    :key="idx"
+    :title="todo.title"
+    :done="todo.done"
+    @checked="() => { todo.done = !todo.done }"
+  /> -->
+  <!-- <TodoItem 
+    v-for="(todo,idx) in todos"
+    :key="idx"
+    :title="todo.title"
+    :done="todo.done"
+    @checked="toggleTodo(idx)"
+  /> -->
+  <!-- <TodoItem 
+    v-for="(todo,idx) in todos"
+    :key="idx"
+    :title="todo.title"
+    :done="todo.done"
+    @checked="toggleTodo(idx)"
+  /> -->
+  <!-- <TodoItem 
+    v-for="(todo,idx) in todos"
+    :key="idx"
+    :title="todo.title"
+    v-model:done="todo.done"
+  /> -->
 </template>
 
 <style>

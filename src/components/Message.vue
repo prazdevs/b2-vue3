@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { onMounted, ref, computed, watch } from "vue";
 import { useCounter } from "../composables/useCounter";
 
 const props = defineProps({

@@ -4,6 +4,7 @@ specifiers:
   '@vitejs/plugin-vue': ^2.3.1
   '@vueuse/core': ^8.2.5
   typescript: ^4.6.3
+  unplugin-auto-import: ^0.7.0
   unplugin-vue-components: ^0.19.2
   vite: ^2.9.1
   vite-plugin-inspect: ^0.4.3
@@ -17,6 +18,7 @@ dependencies:
 devDependencies:
   '@vitejs/plugin-vue': 2.3.1_vite@2.9.1+vue@3.2.31
   typescript: 4.6.3
+  unplugin-auto-import: 0.7.0_@vueuse+core@8.2.5+vite@2.9.1
   unplugin-vue-components: 0.19.2_vite@2.9.1+vue@3.2.31
   vite: 2.9.1
   vite-plugin-inspect: 0.4.3_vite@2.9.1
@@ -865,6 +867,29 @@ packages:
 
   /ufo/0.7.11:
     resolution: {integrity: sha512-IT3q0lPvtkqQ8toHQN/BkOi4VIqoqheqM1FnkNWT9y0G8B3xJhwnoKBu5OHx8zHDOvveQzfKuFowJ0VSARiIDg==}
+    dev: true
+
+  /unplugin-auto-import/0.7.0_@vueuse+core@8.2.5+vite@2.9.1:
+    resolution: {integrity: sha512-40oC7bxzSyyvJI4mXmk8gDD7gKjR10gYkeWBu/UigK8TusXwUsJOjwvIr+REgzOMBGH/5pUiVMoBYEZrLejk3w==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@vueuse/core': '*'
+    peerDependenciesMeta:
+      '@vueuse/core':
+        optional: true
+    dependencies:
+      '@antfu/utils': 0.5.1
+      '@rollup/pluginutils': 4.2.0
+      '@vueuse/core': 8.2.5_vue@3.2.31
+      local-pkg: 0.4.1
+      magic-string: 0.26.1
+      resolve: 1.22.0
+      unplugin: 0.6.1_vite@2.9.1
+    transitivePeerDependencies:
+      - esbuild
+      - rollup
+      - vite
+      - webpack
     dev: true
 
   /unplugin-vue-components/0.19.2_vite@2.9.1+vue@3.2.31:
