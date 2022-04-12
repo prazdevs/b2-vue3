@@ -1,7 +1,15 @@
 <script setup lang="ts">
+import { useCycleList } from '@vueuse/core'
+
+
+const { availableLocales, locale } = useI18n()
+const { next: nextLang } = useCycleList(availableLocales, { initialValue: locale  })
 </script>
 
 <template>
+  <div>
+    <button @click="() => locale =  nextLang()">change lang</button>
+  </div>
   <TodoList />
   <!-- <TodoItem 
     v-for="(todo,idx) in todos"
