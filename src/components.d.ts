@@ -7,6 +7,8 @@ declare module '@vue/runtime-core' {
     Message: typeof import('./components/Message.vue')['default']
     MessageOld: typeof import('./components/MessageOld.vue')['default']
     Redbutton: typeof import('./components/Redbutton.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
     TodoItem: typeof import('./components/TodoItem.vue')['default']
     TodoList: typeof import('./components/TodoList.vue')['default']
   }

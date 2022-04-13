@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useCycleList } from '@vueuse/core'
+import { RouterView } from 'vue-router'
 import { useUserStore } from './stores/user'
 
 const { availableLocales, locale } = useI18n()
@@ -17,7 +18,9 @@ const userStore = useUserStore()
       change lang
     </button>
   </div>
-  <TodoList />
+  
+  <RouterView />
+
   <!-- <TodoItem 
     v-for="(todo,idx) in todos"
     :key="idx"

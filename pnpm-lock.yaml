@@ -14,6 +14,7 @@ specifiers:
   vite-plugin-windicss: ^1.8.3
   vue: ^3.2.31
   vue-i18n: '9'
+  vue-router: '4'
   vue-tsc: ^0.34.4
   windicss: ^3.5.1
 
@@ -22,6 +23,7 @@ dependencies:
   pinia: 2.0.13_typescript@4.6.3+vue@3.2.31
   vue: 3.2.31
   vue-i18n: 9.1.9_vue@3.2.31
+  vue-router: 4.0.14_vue@3.2.31
 
 devDependencies:
   '@intlify/vite-plugin-vue-i18n': 3.4.0_vite@2.9.1+vue-i18n@9.1.9
@@ -1273,6 +1275,15 @@ packages:
       '@intlify/core-base': 9.1.9
       '@intlify/shared': 9.1.9
       '@intlify/vue-devtools': 9.1.9
+      '@vue/devtools-api': 6.1.4
+      vue: 3.2.31
+    dev: false
+
+  /vue-router/4.0.14_vue@3.2.31:
+    resolution: {integrity: sha512-wAO6zF9zxA3u+7AkMPqw9LjoUCjSxfFvINQj3E/DceTt6uEz1XZLraDhdg2EYmvVwTBSGlLYsUw8bDmx0754Mw==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
       '@vue/devtools-api': 6.1.4
       vue: 3.2.31
     dev: false

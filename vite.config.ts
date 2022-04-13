@@ -13,7 +13,7 @@ export default defineConfig({
     vue(),
     inspect(),
     components({ dts: 'src/components.d.ts' }),
-    autoimport({ imports: ['vue', 'vue-i18n'] ,dts: 'src/auto-imports.d.ts' }),
+    autoimport({ imports: ['vue', 'vue-i18n', 'vue-router'] ,dts: 'src/auto-imports.d.ts' }),
     vueI18n({
       include: resolve(__dirname, './locales/**')
     }),
