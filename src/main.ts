@@ -10,7 +10,7 @@ import messages from '@intlify/vite-plugin-vue-i18n/messages'
 // import de feuille css généré par le plugin windicss
 import 'virtual:windi.css'
 
-
+// outil windicss pour ajouter des classes directement depuis les devtools
 import 'virtual:windi-devtools'
 
 const app = createApp(App)

@@ -12,7 +12,11 @@ const { todos, newTask, addNewTask } = useTodos()
   </label>
   <button class="task__add" @click="addNewTask">Add</button>
   <ul>
-    <li v-for="todo in todos" :key="todo.title">
+    <li 
+      v-for="(todo, i) in todos"
+      :key="todo.title"
+      :w:bg="i % 2 == 0 ? 'gray-200' : 'gray-300'"
+    >
       <TodoItem :title="todo.title" v-model:done="todo.done" />
     </li>
   </ul>
