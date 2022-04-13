@@ -10,7 +10,12 @@ const userStore = useUserStore()
 <template>
   <div>
     <input v-model="userStore.user" />
-    <button @click="() => locale =  nextLang()">change lang</button>
+    <button 
+      class="bg-violet-500 text-white p-2 rounded-full uppercase sm:(bg-green-600 rounded-none)"
+      @click="() => locale =  nextLang()"
+    >
+      change lang
+    </button>
   </div>
   <TodoList />
   <!-- <TodoItem 

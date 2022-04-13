@@ -4,7 +4,14 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 
+// import d'objet généré par le plugin vite i18n a partir des fichiers de traductions
 import messages from '@intlify/vite-plugin-vue-i18n/messages'
+
+// import de feuille css généré par le plugin windicss
+import 'virtual:windi.css'
+
+
+import 'virtual:windi-devtools'
 
 const app = createApp(App)
 
