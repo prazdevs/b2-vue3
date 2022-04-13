@@ -2,8 +2,8 @@ import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
 import { createPinia } from 'pinia'
 
-import App from './App.vue'
-import router from './router'
+import App from '@/App.vue'
+import router from '@/router'
 
 // import d'objet généré par le plugin vite i18n a partir des fichiers de traductions
 import messages from '@intlify/vite-plugin-vue-i18n/messages'

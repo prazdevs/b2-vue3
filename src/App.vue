@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { useCycleList } from '@vueuse/core'
 import { RouterView } from 'vue-router'
-import { useUserStore } from './stores/user'
+import { useUserStore } from '@/stores/user'
+import logo from '@/assets/logo.png'
 
 const { availableLocales, locale } = useI18n()
 const { next: nextLang } = useCycleList(availableLocales, { initialValue: locale  })
@@ -10,6 +11,7 @@ const userStore = useUserStore()
 
 <template>
   <div>
+    <img :src="logo" />
     <input v-model="userStore.user" />
     <button 
       class="bg-violet-500 text-white p-2 rounded-full uppercase sm:(bg-green-600 rounded-none)"

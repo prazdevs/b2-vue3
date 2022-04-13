@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
@@ -12,7 +13,22 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "types": ["@intlify/vite-plugin-vue-i18n/client", "vite-plugin-pages/client", "unplugin-icons/types/vue"]
+    "types": [
+      "@intlify/vite-plugin-vue-i18n/client",
+      "vite-plugin-pages/client",
+      "unplugin-icons/types/vue",
+      "vitest"
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "vite.config.ts",
+    "tests/**/*.ts"
+  ]
 }

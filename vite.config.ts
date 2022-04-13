@@ -9,9 +9,15 @@ import pages from 'vite-plugin-pages'
 import icons from 'unplugin-icons/vite'
 import iconsResolver from 'unplugin-icons/resolver'
 import { resolve } from 'path'
+import { fileURLToPath } from 'url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
   plugins: [
     vue(),
     inspect(),
@@ -23,5 +29,8 @@ export default defineConfig({
     }),
     windicss(),
     pages(),
-  ]
+  ],
+  test: {
+    environment: 'happy-dom'
+  }
 })
