@@ -8,6 +8,7 @@ onMounted(() => console.log(route.fullPath))
 </script>
 
 <template>
-  <button w:bg="yellow-200" @click="router.back">retour arriere</button>
+  <button w:bg="yellow-200" @click="router.back">
+  <ICarbonArrowLeft />retour arriere</button>
   <TodoList />
 </template>

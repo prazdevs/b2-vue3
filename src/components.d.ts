@@ -4,6 +4,7 @@
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ICarbonArrowLeft: typeof import('~icons/carbon/arrow-left')['default']
     Message: typeof import('./components/Message.vue')['default']
     MessageOld: typeof import('./components/MessageOld.vue')['default']
     Redbutton: typeof import('./components/Redbutton.vue')['default']

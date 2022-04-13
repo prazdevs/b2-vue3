@@ -1,12 +1,5 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-
-import Index from './pages/Index.vue'
-import Todo from './pages/Todo.vue'
-
-const routes: Array<RouteRecordRaw> = [
-  { path: '/', component: Index },
-  { path: '/todo', component: Todo }
-]
+import { createRouter, createWebHistory } from "vue-router";
+import routes from '~pages'
 
 const router = createRouter({
   history: createWebHistory(),
