@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { shallowMount } from '@vue/test-utils'
 import { describe, it, vi, expect } from 'vitest'
 import { createTestingPinia } from '@pinia/testing' 
